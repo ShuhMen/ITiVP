@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    background-color: #fff;
+}
+.header .header-logo-link {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.header .header-logo-link div{
+    padding: 10px 20px;
+}
+
+.header .header-logo-link .heading{
+    font-size: 35px;
+    color: red;
+    margin: 0; 
+}
+.header .header-logo-link .subheading {
+    font-size: 12px;
+    color: black;
+    margin: 0;
+}
+.header img {
+    height: 50px;
+}
+.header .contact-info {
+    text-align: right;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: red;
+    color: white;
+}
+
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.main-content .signup-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
