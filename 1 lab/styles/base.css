@@ -8,6 +8,7 @@ main{
 display: flex;
 justify-content: center;
 flex-direction: column;
+align-items: center;
 }
 
 .header {
@@ -84,11 +85,14 @@ nav ul li a:hover {
     text-align: center;
     padding: 100px 20px;
     color: white;
+    align-self:stretch;
 }
+
 .main-content h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
+
 .main-content .signup-button {
     background-color: red;
     color: white;

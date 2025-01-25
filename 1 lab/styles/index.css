@@ -8,23 +8,6 @@
     background-size: cover;
 }
 
-.main-content {
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-}
-.main-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-.main-content .signup-button {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .banner {
   background: url('../assets/images/mountains.png') no-repeat center center;
   background-size: cover;
@@ -37,11 +20,10 @@
 }
 
 .container {
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f9f9f9;
+    align-items: start;
     padding: 50px 5%;
 }
 
@@ -49,7 +31,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
 }
 
 .about-school h2, .history h2 {
