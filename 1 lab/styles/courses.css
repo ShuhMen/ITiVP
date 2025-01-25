@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    background-color: #fff;
+}
+.header .header-logo-link {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.header .header-logo-link div{
+    padding: 10px 20px;
+}
+
+.header .header-logo-link .heading{
+    font-size: 35px;
+    color: red;
+    margin: 0; 
+}
+.header .header-logo-link .subheading {
+    font-size: 12px;
+    color: black;
+    margin: 0;
+}
+.header img {
+    height: 50px;
+}
+.header .contact-info {
+    text-align: right;
+}
+
+.intensive{
+    background: url('../assets/images/mountains.png') no-repeat center center;
+    background-size: cover;
+}
+
+.group{
+    background: url('../assets/images/group.png') no-repeat center center;
+    background-size: cover;
+}
+
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.main-content .signup-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.course-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.course-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.teacher-image {
+    text-align: center;
+    margin-top: 20px;
+}
+.teacher-image img {
+    width: 200px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 50px 100px;
+}
+.content {
+    width: 60%;
+}
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: start;
+}
+.button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.highlight {
+    color: red;
+}
