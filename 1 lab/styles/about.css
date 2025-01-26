@@ -35,6 +35,10 @@
     align-items: center;
 }
 
+.info p{
+  align-self: flex-start;
+}
+
 .about-school h2, .history h2 {
     color: #333;
 }
