@@ -15,33 +15,18 @@
     text-decoration: none;
     font-size: 18px;
 }
-.course-description {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-.course-description p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-.teacher-image {
-    text-align: center;
-    margin-top: 20px;
-}
-.teacher-image img {
-    width: 200px;
-    height: auto;
-}
 
 .container {
     display: flex;
     justify-content: center;
-    background-color: #f9f9f9;
     padding: 50px 100px;
 }
 .content {
-    width: 60%;
+    flex: 1;
+    max-width: 40%;
 }
 .sidebar {
+    flex: 10;
     background-color: white;
     padding: 20px;
     max-width: 600px;
