@@ -1,7 +1,7 @@
 .contacts-label{
     display: flex;
     flex-direction: column;
-    background: url('../assets/images/image.png') no-repeat center center;
+    background: url('../assets/images/contact-label.png') no-repeat center center;
     background-size: cover;
     padding: 30px 100px;
     
