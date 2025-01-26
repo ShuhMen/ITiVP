@@ -1,0 +1,32 @@
+.contacts-label{
+    display: flex;
+    flex-direction: column;
+    background: url('../assets/images/image.png') no-repeat center center;
+    background-size: cover;
+    padding: 30px 100px;
+    
+}
+
+.number-label{
+    display: flex;
+    flex-direction: column;
+    background: #2B2122;
+    background-size: cover;
+    padding: 20px 100px;
+    
+}
+
+.contacts-label .subheadline{
+    max-width: 50%;   
+    align-self: center;
+    
+}
+.main-content h1 {
+    font-size: 36px;
+}
+#rectangle{
+    width:200px;
+    height:3px;
+    background:white;
+    align-self: center;
+}
