@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    padding: 50px 5%;
+    padding: 20px 5%;
 }
 
 .info {
@@ -41,5 +41,4 @@
 .cta button:hover {
     background-color: darkred;
 }
-
 

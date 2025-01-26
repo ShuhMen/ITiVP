@@ -1,13 +1,14 @@
 .news-banner{
     background: url('../assets/images/index.jpg') no-repeat center center;
     background-size: cover;
+    padding: 40px 100px;
 }
 .container {
     display: flex;
-    max-width: 60%;
-    margin: 50px auto;
+    width: 60%;
     padding: 20px;
     flex-direction: column;
+    max-width: 1000px;
 }
 .news-header {
     font-size: 32px;
