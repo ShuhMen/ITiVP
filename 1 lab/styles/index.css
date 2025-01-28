@@ -44,26 +44,55 @@
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
+    margin:3%;
 }
 
 .study-forms,
 .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
+@media screen and (max-width: 325px) {
+  .study-forms,
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 325px) {
 .study-form,
 .project {
   text-align: center;
   width: 300px;
   background: white;
-  padding: 20px;
+  padding: 5px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column; 
   justify-content: space-between; 
+}
+}
+
+@media screen and (max-width: 325px) {
+  .study-form,
+  .project {
+    text-align: center;
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
 }
 
 .study-form img ,
