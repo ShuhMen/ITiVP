@@ -6,9 +6,21 @@
     <title>Школа Норвежского Языка NORSK</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/index.css">
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+
 </head>
 <body>
-    <div class="header">
+    <header>
         <a href="index.html">
             <div class="header-logo-link">
                 <img src="assets/images/norsk-logo.png" alt="NORSK Logo">
@@ -22,7 +34,24 @@
             <p>Беларусь, г. Минск, ул. Платонова, 39</p>
             <p>+375 (29) 941-47-24</p>
         </div>
+    </header>
+
+    
+    <div class="topnav">
+        <a href="#home" class="active">Меню</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="pages/cources.html">КУРСЫ</a>
+            <a href="pages/about.html">О НАС</a>
+            <a href="pages/news.html">НОВОСТИ</a>
+            <a href="pages/contacts.html">КОНТАКТЫ</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img class="fa fa-bars" src="../assets/images/burger.svg" alt="burger_menu" style="width: fit-content;">        
+        </a>
     </div>
+
     <nav>
         <ul>
             <li><a href="index.html">ГЛАВНАЯ</a></li>
