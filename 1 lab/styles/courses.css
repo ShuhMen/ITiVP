@@ -1,9 +1,4 @@
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 .intensive{
     background: url('../assets/images/mountains.png') no-repeat center center;
     background-size: cover;
@@ -22,24 +17,61 @@ main{
     font-size: 18px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 100px;
+
+
+@media screen and (max-width: 1000px) {
+    .content {
+        flex: 1;
+        max-width: 90%;
+        margin: 10px
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+    } 
+
+    .sidebar {
+        background-color: white;
+        padding: 20px;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: start;
+        max-height: 80%;
+    }
 }
-.content {
-    flex: 1;
-    max-width: 40%;
+
+@media screen and (min-width: 1000px) {
+    .content {
+        flex: 1;
+        max-width:100%;
+        margin: 10px
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 5%;
+    } 
+    .sidebar {
+        background-color: white;
+        padding: 20px;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: start;
+        max-width: 40%;
+        max-height: fit-content
+    }
+
 }
-.sidebar {
-    flex: 10;
-    background-color: white;
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: start;
-}
+
+
+
 .button {
     background-color: red;
     color: white;
