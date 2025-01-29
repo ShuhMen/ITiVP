@@ -31,4 +31,8 @@
     .info{
      font-size: x-small;
     } 
-   }
+    
+    .rectangle{
+      display: none;
+    }
+  }
