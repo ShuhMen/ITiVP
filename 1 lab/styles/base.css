@@ -4,12 +4,10 @@
     position: relative;
   }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
   }
 
-  /* Style navigation menu links */
   .topnav a {
     color: white;
     padding: 14px 16px;
@@ -18,15 +16,14 @@
     display: block;
   }
 
-  /* Style the hamburger menu */
   .topnav a.icon {
     color: white;
     position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
   }
   
-  /* Style the active link (or home/logo) */
   .active {
     background-color: red;
     color: white;
@@ -48,6 +45,7 @@
 
   header {
     background-color: #f9f9f9;
+    width: max-content;
   }
 
   header a {
