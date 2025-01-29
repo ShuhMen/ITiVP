@@ -29,39 +29,23 @@
 }
 
 .info {
-    flex: 1;
+    flex:1;
+    max-width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    margin:5%;
 }
 
 .info p{
   align-self: flex-start;
 }
 
-.about-school h2, .history h2 {
-    color: #333;
-}
-
-.cta button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.cta button:hover {
-    background-color: darkred;
-}
-
 .team {
-    text-align: center;
-    margin-top: 5px;
     background-size: cover;
-    padding: 50px 0;
+    padding: 20px 5%;
 }
 
 .team-title {
@@ -74,11 +58,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: start;
 }
 
 .team-member {
   text-align: center;
+  margin: 10px 10px;
   width: 300px; 
 }
 
@@ -97,4 +82,50 @@
 .team-member p {
   margin-top: 5px;
   color: black;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 5%;
+}
+  .info {
+    margin: 0;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 711px) {
+  .team {
+    background-size: cover;
+    padding: 10px 5%;
+    width: 90%;
+  }
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .team-member {
+    text-align: center;
+    margin: 10px 10px;
+    width: 100%; 
+  }
+  .team-member img {
+    width: 80%; 
+    max-width: fit-content;
+    height: auto;
+    object-fit: cover;
+  }
 }
