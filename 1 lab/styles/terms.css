@@ -1,7 +1,6 @@
 .banner h1 {
-  color: white;
+  color: #fff;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@
   padding: 15px 1%;
   margin: 5%;
 }
-
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -18,24 +16,17 @@
   justify-content: start;
   align-items: center;
 }
-
+.info h3,
 .info p {
   align-self: flex-start;
 }
-
-.info h3 {
-  align-self: flex-start;
-}
-
 @media screen and (max-width: 325px) {
   .info {
     font-size: small;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .rectangle{
+  .rectangle {
     display: none;
   }
 }
-
