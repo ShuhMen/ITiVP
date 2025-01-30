@@ -6,8 +6,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 1%;
-  margin: 5%;
+  padding: 5px 1%;
+  margin: 1%;
 }
 .info {
   display: flex;
@@ -15,14 +15,19 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 3%;
+}
+.info h1{
+  text-align: center;
 }
 .info h3,
 .info p {
   align-self: flex-start;
 }
-@media screen and (max-width: 325px) {
-  .info {
-    font-size: small;
+@media screen and (max-width: 500px) {
+  .info h1{
+    font-size: medium;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
