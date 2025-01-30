@@ -1,21 +1,17 @@
 .intensive {
-  background: url("../assets/images/mountains.png") no-repeat center center;
-  background-size: cover;
+  background: url("../assets/images/mountains.png") center center/cover
+    no-repeat;
 }
-
 .group {
-  background: url("../assets/images/group.png") no-repeat center center;
-  background-size: cover;
+  background: url("../assets/images/group.png") center center/cover no-repeat;
 }
-
 .main-content .signup-button {
   background-color: red;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 18px;
 }
-
 @media screen and (max-width: 900px) {
   .content {
     max-width: 90%;
@@ -28,9 +24,8 @@
     padding: 20px;
     flex-direction: column;
   }
-
   .sidebar {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     max-width: 600px;
     border-radius: 8px;
@@ -39,22 +34,19 @@
     max-height: 80%;
   }
 }
-
 @media screen and (min-width: 900px) {
   .content {
     max-width: 100%;
     margin: 10px;
   }
-
   .container {
     display: flex;
     justify-content: center;
     padding: 50px 5%;
   }
   .sidebar {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
-    max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: start;
@@ -62,10 +54,9 @@
     max-height: fit-content;
   }
 }
-
 .button {
   background-color: red;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;

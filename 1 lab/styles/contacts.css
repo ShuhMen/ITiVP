@@ -2,40 +2,32 @@
   .main-content h1 {
     font-size: 24px;
   }
-
   .contacts-label {
     display: flex;
     flex-direction: column;
-    background: url("../assets/images/contact-label.png") no-repeat center
-      center;
-    background-size: cover;
+    background: url("../assets/images/contact-label.png") center center/cover
+      no-repeat;
     padding: 5%;
   }
-
   .number-label {
     display: flex;
     flex-direction: column;
-    background: #2b2122;
-    background-size: cover;
+    background: 0 0 / cover #2b2122;
     padding: 5%;
   }
 }
-
 @media screen and (min-width: 900px) {
   .contacts-label {
     display: flex;
     flex-direction: column;
-    background: url("../assets/images/contact-label.png") no-repeat center
-      center;
-    background-size: cover;
+    background: url("../assets/images/contact-label.png") center center/cover
+      no-repeat;
     padding: 30px 100px;
   }
-
   .number-label {
     display: flex;
     flex-direction: column;
-    background: #2b2122;
-    background-size: cover;
+    background: 0 0 / cover #2b2122;
     padding: 20px 100px;
   }
   .contacts-label .subheadline {
@@ -46,10 +38,9 @@
     font-size: 36px;
   }
 }
-
 #rectangle {
   width: 200px;
   height: 3px;
-  background: white;
+  background: #fff;
   align-self: center;
 }
