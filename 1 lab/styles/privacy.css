@@ -19,20 +19,22 @@
   align-items: center;
 }
 
-.info p{
+.info p {
   align-self: flex-start;
 }
 
-.info h3{
-    align-self: flex-start;
-  }
+.info h3 {
+  align-self: flex-start;
+}
 
-  @media screen and (max-width: 500px) {
-    .info{
-     font-size: x-small;
-    } 
-    
-    .rectangle{
-      display: none;
-    }
+@media screen and (max-width: 500px) {
+  .info {
+    font-size: x-small;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle {
+    display: none;
+  }
+}
