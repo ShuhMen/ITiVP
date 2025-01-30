@@ -1,45 +1,43 @@
-
-
 @media screen and (max-width: 900px) {
-    .main-content h1 {
-        font-size: 24px;
-      }
+  .main-content h1 {
+    font-size: 24px;
+  }
 
-      .contacts-label {
-        display: flex;
-        flex-direction: column;
-        background: url("../assets/images/contact-label.png") no-repeat center center;
-        background-size: cover;
-        padding: 5%;
-      }
-      
-      .number-label {
-        display: flex;
-        flex-direction: column;
-        background: #2b2122;
-        background-size: cover;
-        padding: 5% ;
-      }
+  .contacts-label {
+    display: flex;
+    flex-direction: column;
+    background: url("../assets/images/contact-label.png") no-repeat center
+      center;
+    background-size: cover;
+    padding: 5%;
+  }
 
+  .number-label {
+    display: flex;
+    flex-direction: column;
+    background: #2b2122;
+    background-size: cover;
+    padding: 5%;
+  }
 }
 
 @media screen and (min-width: 900px) {
+  .contacts-label {
+    display: flex;
+    flex-direction: column;
+    background: url("../assets/images/contact-label.png") no-repeat center
+      center;
+    background-size: cover;
+    padding: 30px 100px;
+  }
 
-    .contacts-label {
-        display: flex;
-        flex-direction: column;
-        background: url("../assets/images/contact-label.png") no-repeat center center;
-        background-size: cover;
-        padding: 30px 100px;
-      }
-      
-      .number-label {
-        display: flex;
-        flex-direction: column;
-        background: #2b2122;
-        background-size: cover;
-        padding: 20px 100px;
-      }
+  .number-label {
+    display: flex;
+    flex-direction: column;
+    background: #2b2122;
+    background-size: cover;
+    padding: 20px 100px;
+  }
   .contacts-label .subheadline {
     max-width: 50%;
     align-self: center;
@@ -47,7 +45,6 @@
   .main-content h1 {
     font-size: 36px;
   }
-
 }
 
 #rectangle {

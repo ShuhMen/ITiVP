@@ -1,37 +1,41 @@
 .banner h1 {
-    color: white;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px 1%;
-    margin: 5%;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 1%;
+  margin: 5%;
 }
 
 .info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
-  
-  .info p{
-    align-self: flex-start;
-  }
-  
-  .info h3{
-      align-self: flex-start;
-    }
 
-    @media screen and (max-width: 325px) {
-        .info{
-         font-size: small;
-        } 
-        .rectangle{
-          display: none;
-        }
-    }
+.info p {
+  align-self: flex-start;
+}
+
+.info h3 {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 325px) {
+  .info {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rectangle{
+    display: none;
+  }
+}
+
