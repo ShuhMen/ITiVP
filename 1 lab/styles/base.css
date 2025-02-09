@@ -5,7 +5,8 @@
   }
   .topnav {
     background-color: grey;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .active,
   .main-content .signup-button,
@@ -159,9 +160,16 @@
   body,
   header,
   main,
-  nav,
   nav ul {
     display: flex;
+  }
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9 ;
+    width: 100%;
+   justify-content: center;
   }
   .main-content .signup-button,
   nav ul li a:hover {
@@ -191,7 +199,7 @@
     width: 70%;
   }
   .topnav {
-    visibility: collapse;
+    display: none;
   }
   header .header-logo-link {
     display: flex;
