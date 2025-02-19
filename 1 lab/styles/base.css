@@ -294,3 +294,55 @@
     background: #000;
   }
 }
+
+
+#dialog_sign {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#dialog_sign h2 {
+  color: black;
+  text-align: center;
+}
+
+#dialog_sign label {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+
+#dialog_sign input {
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#dialog_sign button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#dialog_sign button:hover {
+  background-color: darkred;
+}
+
+#dialog_sign p {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+}
