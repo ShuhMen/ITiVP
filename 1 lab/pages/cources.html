@@ -62,11 +62,23 @@
         </ul>
     </nav>
     <main>
-        <div class="main-content intensive">
+        <dialog id="dialog_sign">
+            <div style="display: flex; flex-direction: column;">
+                <h2>Записаться на курс</h2>    
+                <label for="name">Имя:*</label>
+                <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
+                <label for="email">E-mail:*</label>
+                <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+                <button type="submit">Отправить</button>
+                <p>* — Обязательные поля</p>
+            </div>
+        </dialog>
+
+        <div id="intensive" class="main-content intensive">
             <h1>ЛЕТНИЕ ИНТЕНСИВНЫЕ КУРСЫ</h1>
-            <a href="#" class="signup-button">ЗАПИСАТЬСЯ</a>
+            <a onclick="window.dialog_sign.showModal()" class="signup-button">ЗАПИСАТЬСЯ</a>
         </div>
-        <div class="container">
+        <div  class="container">
             <div class="content">
                 <h1>Интенсивный курс норвежского языка — это краткосрочный (2–3 месяца) курс норвежского языка.</h1>
                 <p>Проводится несколько раз в год для тех, кто нуждается в быстром и эффективном получении элементарных
@@ -82,7 +94,7 @@
                     <li>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с
                         запятой, но текст не дал сбить себя с толку</li>
                 </ul>
-                <a href="#" class="button">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
+                <a onclick="window.dialog_sign.showModal()" class="button">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
             </div>
             <div class="sidebar">
                 <img src="../assets/images/course-teacher.png" alt="Инголфр и Сигритр" style="width:100%;">
@@ -93,11 +105,11 @@
                     классический!</p>
             </div>
         </div>
-        <div class="main-content group">
-            <h1>ЛЕТНИЕ ИНТЕНСИВНЫЕ КУРСЫ</h1>
-            <a href="#" class="signup-button">ЗАПИСАТЬСЯ</a>
+        <div id="group" class="main-content group">
+            <h1>ОБУЧЕНИЕ В ГРУППАХ ПО ГРАФИКУ</h1>
+            <a onclick="window.dialog_sign.showModal()" class="signup-button">ЗАПИСАТЬСЯ</a>
         </div>
-        <div class="container">
+        <div  class="container">
             <div class="content">
                 <h1>Обучение в группах — самая доступная и популярная форма обучения в Скандинавской Школе</h1>
                 <p>При обучении в группах используется фиксированное расписание занятий, ориентированное на определённые
@@ -114,7 +126,7 @@
                     <li>На берегу семантика большого языкового океана</li>
                     <li>Семантика большого языкового океана</li>
                 </ul>
-                <a href="#" class="button">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
+                <a class="button" onclick="window.dialog_sign.showModal()">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
             </div>
             <div class="sidebar">
                 <img src="../assets/images/group-teacher.png" alt="Грай Астрид" style="width:100%;">
