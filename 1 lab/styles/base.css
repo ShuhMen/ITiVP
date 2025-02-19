@@ -146,6 +146,15 @@
     height: 1px;
     background: #000;
   }
+
+  #dialog_sign {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 95%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 @media screen and (min-width: 768px) {
   body,
@@ -293,16 +302,15 @@
     height: 1px;
     background: #000;
   }
-}
 
-
-#dialog_sign {
-  background-color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  #dialog_sign {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 #dialog_sign h2 {
