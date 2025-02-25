@@ -42,3 +42,46 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+    const totalSlides = slides.length;
+    const intervalTime = 3000; // Интервал автоматического переключения
+    let autoSlide = setInterval(nextSlide, intervalTime);
+
+    function updateSlide(index) {
+        const slidesContainer = document.querySelector(".carousel-slides");
+        slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        let newIndex = (currentIndex + 1) % totalSlides;
+        updateSlide(newIndex);
+    }
+
+    function prevSlide() {
+        let newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlide(newIndex);
+    }
+
+    document.querySelector(".prev").addEventListener("click", () => {
+        prevSlide();
+        resetAutoSlide();
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+        nextSlide();
+        resetAutoSlide();
+    });
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        autoSlide = setInterval(nextSlide, intervalTime);
+    }
+
+    updateSlide(0);
+});
