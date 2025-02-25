@@ -7,6 +7,7 @@
     background-color: grey;
     position: sticky;
     top: 0;
+    z-index: 10;
   }
   .active,
   .main-content .signup-button,
@@ -179,6 +180,7 @@
     background-color: #f9f9f9 ;
     width: 100%;
    justify-content: center;
+   z-index: 10;
   }
   .main-content .signup-button,
   nav ul li a:hover {
@@ -209,6 +211,7 @@
   }
   .topnav {
     display: none;
+    z-index: 10;
   }
   header .header-logo-link {
     display: flex;
