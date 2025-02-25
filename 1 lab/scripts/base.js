@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
             overlay.style.alignItems = "center";
             overlay.style.zIndex = "1000";
             
+            const closeButton = document.createElement("div");
+            closeButton.innerHTML = "&times;";
+            closeButton.style.position = "absolute";
+            closeButton.style.top = "30px";
+            closeButton.style.right = "40px";
+            closeButton.style.fontSize = "30px";
+            closeButton.style.color = "white";
+            closeButton.style.cursor = "pointer";
+            closeButton.style.fontWeight = "bold";
+            
             const enlargedImg = document.createElement("img");
             enlargedImg.src = img.src;
             enlargedImg.style.maxWidth = "90vw";
@@ -25,9 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
             enlargedImg.style.cursor = "zoom-out";
             
             overlay.appendChild(enlargedImg);
+            overlay.appendChild(closeButton);
             document.body.appendChild(overlay);
             
             overlay.addEventListener("click", function () {
+                document.body.removeChild(overlay);
+            });
+            
+            closeButton.addEventListener("click", function (event) {
+                event.stopPropagation();
                 document.body.removeChild(overlay);
             });
         });

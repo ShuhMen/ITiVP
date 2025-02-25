@@ -82,7 +82,7 @@
 /* Кнопки переключения */
 .prev, .next {
   position: absolute;
-  top: 50%;
+  top: 42%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -105,8 +105,6 @@
 .prev { left: 10px; }
 .next { right: 10px; }
 
-
-/**/
 
 .team-member h3 {
   margin-top: 10px;
@@ -139,15 +137,56 @@
   .team {
     background-size: cover;
     padding: 10px 5%;
-    width: 90%;
+    max-width: 90%;
   }
 
   .team-member {
     text-align: center;
-    margin: 10px;
-    width: 100%;
+    margin: 1%;
+    max-width: 85%;
     position: relative;
     z-index: 1;
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Кнопки переключения */
+  .prev, .next {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
   }
 }
 
