@@ -28,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
             closeButton.style.fontWeight = "bold";
             
             const enlargedImg = document.createElement("img");
-            enlargedImg.src = img.src;
-            enlargedImg.style.maxWidth = "90vw";
             enlargedImg.style.maxHeight = "90vh";
+            enlargedImg.style.maxWidth = "90vw";
+            enlargedImg.style.height = "80%";
+            enlargedImg.style.objectFit="contain"      
+            enlargedImg.src = img.src;
             enlargedImg.style.borderRadius = "8px";
             enlargedImg.style.cursor = "zoom-out";
             
